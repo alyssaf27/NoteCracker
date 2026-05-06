@@ -3,13 +3,13 @@ import { createClient } from '@supabase/supabase-js'
 import './App.css'
 import FlashcardGenerator from './Components/FlashcardGenerator'
 
-const supabase = createClient(//for referencing my .env file
+const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
   import.meta.env.VITE_SUPABASE_ANON_KEY
 )
 
 function App() {
-  const [notes, setNotes] = useState('') //tracks text area
+  const [notes, setNotes] = useState('')
   const [generate, setGenerate] = useState(false)
 
   const handleCreate = async () => {
@@ -24,7 +24,7 @@ function App() {
       return
     }
 
-    setGenerate(true) // triggers the flash card generator
+    setGenerate(true) // triggers the generator
   }
 
   return (
