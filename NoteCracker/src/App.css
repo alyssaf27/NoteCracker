@@ -4,6 +4,7 @@
   perspective: 1000px;
   cursor: pointer;
   margin: 20px auto;
+  padding-top: 15px;
 }
 
 .card {
@@ -32,12 +33,12 @@
 }
 
 .cardFront {
-  background-color: #4A90D9;
+  background-color: #3d9970;
   color: white;
 }
 
 .cardBack {
-  background-color: #2ECC71;
+  background-color: #97433d;
   color: white;
   transform: rotateY(180deg);
 }
@@ -184,3 +185,27 @@ main {
   font-size: 13px;
   color: #8fa08b;
 }
+
+.deckButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.deckButtons button {
+  background: #3d9970;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.deckButtons button:hover:not(:disabled) { background: #2a6e4f; }
+.deckButtons button:disabled { opacity: 0.4; cursor: not-allowed; }

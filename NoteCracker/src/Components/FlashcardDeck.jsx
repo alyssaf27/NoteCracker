@@ -27,8 +27,8 @@ function FlashCardDeck({ cards }) {
             />
 
             <div className="deckButtons">
-                <button onClick={prevCard} disabled={cards.length <= 1}>← Prev</button>
-                <button onClick={nextCard} disabled={cards.length <= 1}>Next →</button>
+                <button id= "prev" onClick={prevCard} disabled={cards.length <= 1}>← Prev</button>
+                <button id= "Next" onClick={nextCard} disabled={cards.length <= 1}>Next →</button>
             </div>
         </div>
     );
