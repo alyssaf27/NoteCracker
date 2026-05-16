@@ -29,22 +29,35 @@ function App() {
 
   return (
     <main>
-      <h1>NoteCracker</h1>
-      <p>Insert Your Study Notes Here and NoteCracker Will Create Your Personal Study Flashcards!</p>
-      <textarea
-        value={notes}
-        onChange={e => {
-          setNotes(e.target.value)
-          setGenerate(false) // reset if user edits notes
-        }}
-        placeholder="Paste your notes here..."
-      />
-      <button onClick={handleCreate} disabled={!notes.trim()}>
-        Create Flashcards
-      </button>
-      <FlashcardGenerator notes={notes} generate={generate} />
+      <div id="app-wrapper">
+        <div className="app-header">
+          <div className="app-badge">
+            <div className="app-badge-dot" />
+            <span>study tool</span>
+          </div>
+          <h1 id="AppName">NoteCracker</h1>
+          <p id="Text1">Paste your notes and get instant AI-powered flashcards.</p>
+        </div>
+  
+        <div className="input-card">
+          <label className="input-label">Your notes</label>
+          <textarea
+            id="TextBox"
+            value={notes}
+            onChange={e => { setNotes(e.target.value); setGenerate(false); }}
+            placeholder="Paste lecture notes, textbook excerpts, anything..."
+          />
+          <div className="input-footer">
+            <span className="char-count">{notes.length} characters</span>
+            <button id="Button" onClick={handleCreate} disabled={!notes.trim()}>
+              Generate flashcards →
+            </button>
+          </div>
+        </div>
+  
+        <FlashcardGenerator notes={notes} generate={generate} />
+      </div>
     </main>
   )
 }
-
 export default App

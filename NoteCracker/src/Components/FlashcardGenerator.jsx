@@ -65,7 +65,7 @@ ${notes}`
     }
   }
 
-  if (loading) return <p>Generating flashcards...</p>
+  if (loading) return <p id="Loading">Generating flashcards...</p>
   if (error) return <p>{error}</p>
 
   return (

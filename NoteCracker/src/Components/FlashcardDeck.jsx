@@ -4,16 +4,16 @@ import FlashCard from "./Flashcard";
 function FlashCardDeck({ cards }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    function nextCard() {
+    function nextCard() {//what the buttons will do when clicked
         setCurrentIndex((prev) => (prev + 1) % cards.length);
     }
 
-    function prevCard() {
+    function prevCard() {//what the buttons will do when clicked
         setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
     }
 
     if (!cards || cards.length === 0) {
-        return <p>No flashcards yet. Generate some!</p>;
+        return <p id="Status">No flashcards yet. Generate some!</p>;
     }
 
     return (

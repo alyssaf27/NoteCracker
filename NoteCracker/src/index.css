@@ -1,0 +1,17 @@
+
+#AppName{
+    display: grid;
+    place-items: center; 
+    height: 10vh; 
+  }
+  
+  #Text1{
+    display: grid;
+  place-items: center; 
+  height: 10vh; 
+  }
+  #TextBox{
+    display: grid;
+    place-items: center; 
+    height: 10vh; 
+  }
