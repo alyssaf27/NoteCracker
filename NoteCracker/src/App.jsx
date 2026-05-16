@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 import './App.css'
 import FlashcardGenerator from './Components/FlashcardGenerator'
+import logo from './IconColor.png';
 
 const supabase = createClient(//for referencing my .env file
   import.meta.env.VITE_SUPABASE_URL,
@@ -35,7 +36,7 @@ function App() {
             <div className="app-badge-dot" />
             <span>study tool</span>
           </div>
-          <h1 id="AppName">NoteCracker</h1>
+          <img src={logo} alt="NoteCracker" id="AppName" />
           <p id="Text1">Paste your notes and get instant AI-powered flashcards.</p>
         </div>
   

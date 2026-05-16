@@ -33,21 +33,22 @@
 }
 
 .cardFront {
-  background-color: #3d9970;
-  color: white;
+  background-color: #F5E6B8;
+  color: #1C1C1A;
 }
 
 .cardBack {
-  background-color: #97433d;
+  background-color: #3D3530;
   color: white;
   transform: rotateY(180deg);
 }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: #f4f7f4;
+  background: #FAFAF7;
   min-height: 100vh;
-  font-family: inherit;
+  font-family: 'Helvetica Neue';
 }
 
 main {
@@ -67,20 +68,22 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #eaf3de;
+  background: #F5E6B8;
   border-radius: 100px;
   padding: 5px 16px;
   margin-bottom: 16px;
 }
+
 .app-badge-dot {
   width: 8px; height: 8px;
   border-radius: 50%;
-  background: #3d9970;
+  background: #C9973A;
 }
+
 .app-badge span {
   font-size: 12px;
   font-weight: 600;
-  color: #27500a;
+  color: #7A5C1E;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -91,24 +94,26 @@ main {
 }
 
 #AppName {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #1a1f1a;
+  width: 400px;
+  height: auto;
+  margin: 0 auto 8px auto;
+  display: block;
+  mix-blend-mode: multiply;
+  padding-top: 30px;
 }
 
 #Text1 {
   font-size: 16px;
-  color: #4a5449;
+  color: #5C5650;
   line-height: 1.6;
-  max-width: 380px;
   margin: 0 auto;
+  white-space: nowrap;
 }
 
 .input-card {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 20px;
-  border: 1px solid #dde8dd;
+  border: 1px solid #E8E0D0;
   padding: 28px;
   margin-bottom: 16px;
 }
@@ -116,7 +121,7 @@ main {
 .input-label {
   font-size: 11px;
   font-weight: 600;
-  color: #4a5449;
+  color: #5C5650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   display: block;
@@ -126,21 +131,21 @@ main {
 #TextBox {
   width: 100%;
   height: 130px;
-  background: #f4f7f4;
+  background: #FAFAF7;
   border-radius: 12px;
-  border: 1px solid #dde8dd;
+  border: 1px solid #E8E0D0;
   padding: 14px 16px;
   font-size: 14px;
   font-family: inherit;
-  color: #1a1f1a;
+  color: #1C1C1A;
   resize: vertical;
   outline: none;
   transition: border-color 0.2s;
   margin-bottom: 16px;
 }
 
-#TextBox::placeholder { color: #8fa08b; }
-#TextBox:focus { border-color: #3d9970; }
+#TextBox::placeholder { color: #A89880; }
+#TextBox:focus { border-color: #C9973A; }
 
 .input-footer {
   display: flex;
@@ -150,12 +155,12 @@ main {
 
 .char-count {
   font-size: 12px;
-  color: #8fa08b;
+  color: #A89880;
 }
 
 #Button {
-  background: #3d9970;
-  color: #fff;
+  background: #3D3530;
+  color: #FAFAF7;
   border: none;
   border-radius: 100px;
   padding: 10px 24px;
@@ -165,25 +170,25 @@ main {
   cursor: pointer;
   transition: background 0.2s, opacity 0.2s;
 }
-#Button:hover:not(:disabled) { background: #2a6e4f; }
+#Button:hover:not(:disabled) { background: #1C1C1A; }
 #Button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 .empty-card {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 20px;
-  border: 1px solid #dde8dd;
+  border: 1px solid #E8E0D0;
   padding: 40px 28px;
   text-align: center;
 }
 .empty-card p:first-of-type {
   font-size: 15px;
   font-weight: 600;
-  color: #1a1f1a;
+  color: #1C1C1A;
   margin-bottom: 6px;
 }
 .empty-card p:last-of-type {
   font-size: 13px;
-  color: #8fa08b;
+  color: #A89880;
 }
 
 .deckButtons {
@@ -195,8 +200,8 @@ main {
 }
 
 .deckButtons button {
-  background: #3d9970;
-  color: #fff;
+  background: #3D3530;
+  color: #FAFAF7;
   border: none;
   border-radius: 100px;
   padding: 10px 24px;
@@ -207,5 +212,5 @@ main {
   transition: background 0.2s, opacity 0.2s;
 }
 
-.deckButtons button:hover:not(:disabled) { background: #2a6e4f; }
+.deckButtons button:hover:not(:disabled) { background: #1C1C1A; }
 .deckButtons button:disabled { opacity: 0.4; cursor: not-allowed; }
