@@ -3,6 +3,7 @@ NoteCracker
 Turn your semester notes into flashcards instantly — built for finals season.
 
 Project Overview
+
 NoteCracker is an AI-powered study tool that lets you paste your notes and instantly generate flashcards to help you study. Built during finals season, the goal was to make reviewing material faster and more effective by letting AI do the heavy lifting of breaking notes down into digestible question-and-answer cards.
 Live Demo
 🔗 [NoteCracker](https://note-cracker-da7wg59je-alyssa-falcon-s-projects.vercel.app/)
